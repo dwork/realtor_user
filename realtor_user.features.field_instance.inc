@@ -1016,12 +1016,13 @@ function realtor_user_field_default_field_instances() {
     'entity_type' => 'user',
     'field_name' => 'field_offid',
     'label' => 'Listing Office ID',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
-      'user_register_form' => FALSE,
+      'user_register_form' => 1,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'size' => 60,
