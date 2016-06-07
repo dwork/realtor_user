@@ -21,7 +21,7 @@ function realtor_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact Information',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_phone',
       1 => 'field_fax',
@@ -37,7 +37,7 @@ function realtor_user_field_group_info() {
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'description' => '',
-        'classes' => '',
+        'classes' => ' group-contact field-group-fieldset',
         'required_fields' => 1,
       ),
     ),
@@ -63,18 +63,17 @@ function realtor_user_field_group_info() {
       3 => 'field_title',
       4 => 'field_middlename',
       5 => 'field_lastname',
-      6 => 'field_agentid',
-      7 => 'field_agency',
-      8 => 'field_company_name',
-      9 => 'field_offid',
-      10 => '_add_existing_field',
+      6 => 'field_company_name',
+      7 => 'field_offid',
+      8 => 'field_agency',
+      9 => '_add_existing_field',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'description' => '',
-        'classes' => '',
+        'classes' => ' group-id field-group-fieldset',
         'required_fields' => 1,
       ),
     ),
@@ -92,7 +91,7 @@ function realtor_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Professional',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_licensed',
       1 => 'field_license',
@@ -103,7 +102,7 @@ function realtor_user_field_group_info() {
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'description' => '',
-        'classes' => '',
+        'classes' => ' group-professional field-group-fieldset',
         'required_fields' => 1,
       ),
     ),

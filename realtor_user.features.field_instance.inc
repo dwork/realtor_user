@@ -10,19 +10,115 @@
 function realtor_user_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-image-body'
+  $field_instances['node-image-body'] = array(
+    'bundle' => 'image',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'node-image-field_graphic'
+  $field_instances['node-image-field_graphic'] = array(
+    'bundle' => 'image',
+    'deleted' => 0,
+    'description' => 'Upload an image to the public library, useful for widgets and other images used throughout.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_graphic',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 32,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_agency'
   $field_instances['user-user-field_agency'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Real Estate agents only, the agency you belong to',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 19,
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 35,
       ),
     ),
     'entity_type' => 'user',
@@ -37,14 +133,18 @@ function realtor_user_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 31,
+      'weight' => 52,
     ),
   );
 
   // Exported field_instance: 'user-user-field_agentid'
   $field_instances['user-user-field_agentid'] = array(
     'bundle' => 'user',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 1234567,
+      ),
+    ),
     'deleted' => 0,
     'description' => 'Agent ID (MLS Identification code)',
     'display' => array(
@@ -71,7 +171,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 15,
       ),
       'type' => 'text_textfield',
-      'weight' => 34,
+      'weight' => 7,
     ),
   );
 
@@ -379,7 +479,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 32,
+      'weight' => 53,
     ),
   );
 
@@ -414,7 +514,7 @@ function realtor_user_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -479,7 +579,7 @@ function realtor_user_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 40,
+      'weight' => 61,
     ),
   );
 
@@ -820,7 +920,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 40,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 56,
     ),
   );
 
@@ -854,7 +954,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 37,
+      'weight' => 58,
     ),
   );
 
@@ -960,7 +1060,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 1,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 57,
     ),
   );
 
@@ -994,7 +1094,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 10,
       ),
       'type' => 'text_textfield',
-      'weight' => 38,
+      'weight' => 59,
     ),
   );
 
@@ -1028,7 +1128,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 33,
+      'weight' => 54,
     ),
   );
 
@@ -1336,7 +1436,7 @@ function realtor_user_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 39,
+      'weight' => 60,
     ),
   );
 
@@ -1634,6 +1734,7 @@ function realtor_user_field_default_field_instances() {
     'label' => 'Website',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -1646,6 +1747,7 @@ function realtor_user_field_default_field_instances() {
       ),
       'enable_tokens' => 0,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -1666,6 +1768,7 @@ function realtor_user_field_default_field_instances() {
   t('Agency');
   t('Agent ID');
   t('Agent ID (MLS Identification code)');
+  t('Body');
   t('Cell');
   t('Company Name');
   t('Default Flyer');
@@ -1677,6 +1780,7 @@ function realtor_user_field_default_field_instances() {
   t('Fax');
   t('First Name');
   t('If you are a Real Estate Agent, and your Agency is not listed, please enter your Agency name here. If you are a company, enter your company\'s full name here.');
+  t('Image');
   t('Last Name');
   t('License or CCB#');
   t('Licensed in (State)');
@@ -1685,11 +1789,11 @@ function realtor_user_field_default_field_instances() {
   t('Name Suffix');
   t('Phone');
   t('Public Email Address');
-  t('Real Estate agents only, the agency you belong to');
   t('Realtors enter License# (if known). Contractors must enter CCB#.');
   t('Suffix, if any (e.g. JR, SR, III)');
   t('Title');
   t('Toll Free');
+  t('Upload an image to the public library, useful for widgets and other images used throughout.');
   t('Website');
   t('Website URL. If multiple websites, enter the OIP-hosted website first.');
 
