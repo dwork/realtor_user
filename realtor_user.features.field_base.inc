@@ -605,6 +605,46 @@ function realtor_user_field_default_field_bases() {
     'type' => 'phone_number',
   );
 
+  // Exported field_base: 'field_rotatinglisting'
+  $field_bases['field_rotatinglisting'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_rotatinglisting',
+    'foreign keys' => array(
+      'nid' => array(
+        'columns' => array(
+          'nid' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
+    'indexes' => array(
+      'nid' => array(
+        0 => 'nid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'node_reference',
+    'settings' => array(
+      'referenceable_types' => array(
+        'article' => 0,
+        'company' => 0,
+        'listing' => 'listing',
+        'open_house' => 0,
+        'page' => 0,
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'node_reference',
+  );
+
   // Exported field_base: 'field_teammate'
   $field_bases['field_teammate'] = array(
     'active' => 1,

@@ -924,50 +924,6 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_image'
-  $field_instances['user-user-field_image'] = array(
-    'bundle' => 'user',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 37,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_image',
-    'label' => 'Picture',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => 0,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 39,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_lastname'
   $field_instances['user-user-field_lastname'] = array(
     'bundle' => 'user',
@@ -1105,6 +1061,41 @@ function realtor_user_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 57,
+    ),
+  );
+
+  // Exported field_instance: 'user-user-field_mls_type'
+  $field_instances['user-user-field_mls_type'] = array(
+    'bundle' => 'user',
+    'default_value' => array(
+      0 => array(
+        'tid' => 25,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 31,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_mls_type',
+    'label' => 'MLS Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 38,
     ),
   );
 
@@ -1447,6 +1438,37 @@ function realtor_user_field_default_field_instances() {
       ),
       'type' => 'phone_number',
       'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'user-user-field_rotatinglisting'
+  $field_instances['user-user-field_rotatinglisting'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'node_reference',
+        'settings' => array(),
+        'type' => 'node_reference_default',
+        'weight' => 23,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_rotatinglisting',
+    'label' => 'Rotating Listing',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 10,
     ),
   );
 
@@ -1866,12 +1888,13 @@ function realtor_user_field_default_field_instances() {
   t('License or CCB#');
   t('Licensed in (State)');
   t('Listing Office ID');
+  t('MLS Type');
   t('Middle Initial');
   t('Name Suffix');
   t('Phone');
-  t('Picture');
   t('Public Email Address');
   t('Realtors enter License# (if known). Contractors must enter CCB#.');
+  t('Rotating Listing');
   t('Select an existing member if this member always "team lists". This field will populate to "co-list" field if the MLS co-list field is empty or is for a non-member.');
   t('Suffix, if any (e.g. JR, SR, III)');
   t('Teammate');
