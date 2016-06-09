@@ -70,6 +70,7 @@ features[field_instance][] = user-user-field_middlename
 features[field_instance][] = user-user-field_name_suffix
 features[field_instance][] = user-user-field_offid
 features[field_instance][] = user-user-field_phone
+features[field_instance][] = user-user-field_teammate
 features[field_instance][] = user-user-field_title
 features[field_instance][] = user-user-field_tollfree
 features[field_instance][] = user-user-field_website

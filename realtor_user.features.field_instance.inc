@@ -1406,6 +1406,43 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'user-user-field_teammate'
+  $field_instances['user-user-field_teammate'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select an existing member if this member always "team lists". This field will populate to "co-list" field if the MLS co-list field is empty or is for a non-member.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 36,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_teammate',
+    'label' => 'Teammate',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 62,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_title'
   $field_instances['user-user-field_title'] = array(
     'bundle' => 'user',
@@ -1790,7 +1827,9 @@ function realtor_user_field_default_field_instances() {
   t('Phone');
   t('Public Email Address');
   t('Realtors enter License# (if known). Contractors must enter CCB#.');
+  t('Select an existing member if this member always "team lists". This field will populate to "co-list" field if the MLS co-list field is empty or is for a non-member.');
   t('Suffix, if any (e.g. JR, SR, III)');
+  t('Teammate');
   t('Title');
   t('Toll Free');
   t('Upload an image to the public library, useful for widgets and other images used throughout.');
