@@ -31,6 +31,7 @@ function realtor_user_field_group_info() {
       5 => 'field_email',
       6 => 'field_oip_web_host',
       7 => 'field_mls_type',
+      8 => 'field_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -66,7 +67,6 @@ function realtor_user_field_group_info() {
       6 => 'field_company_name',
       7 => 'field_offid',
       8 => 'field_agency',
-      9 => '_add_existing_field',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
