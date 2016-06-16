@@ -10,7 +10,1446 @@
 function realtor_user_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-image-body'
+  // Exported field_instance: 'node-company-field_address'.
+  $field_instances['node-company-field_address'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Street Address',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_address',
+    'label' => 'Address 1',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_address2'.
+  $field_instances['node-company-field_address2'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_address2',
+    'label' => 'Address 2',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_agent_count'.
+  $field_instances['node-company-field_agent_count'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_agent_count',
+    'label' => 'Agent Count',
+    'required' => FALSE,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 19,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_city'.
+  $field_instances['node-company-field_city'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_city',
+    'label' => 'City',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_company_logo'.
+  $field_instances['node-company-field_company_logo'] = array(
+    'bundle' => 'company',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_company_logo',
+    'label' => 'Company Logo',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '200x100',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_companytype'.
+  $field_instances['node-company-field_companytype'] = array(
+    'bundle' => 'company',
+    'default_value' => array(
+      0 => array(
+        'tid' => 16,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_companytype',
+    'label' => 'Company Type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_contact'.
+  $field_instances['node-company-field_contact'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_contact',
+    'label' => 'Contact/Principal Broker',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_email'.
+  $field_instances['node-company-field_email'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Company email address',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_email',
+    'label' => 'Company Email',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_fax'.
+  $field_instances['node-company-field_fax'] = array(
+    'bundle' => 'company',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'cck_phone',
+        'settings' => array(),
+        'type' => 'global_phone_number',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_fax',
+    'label' => 'Fax',
+    'required' => 0,
+    'settings' => array(
+      'all_country_codes' => 0,
+      'country_code_position' => 'before',
+      'country_codes' => array(
+        'country_selection' => array(
+          'ad' => 0,
+          'ae' => 0,
+          'af' => 0,
+          'ag' => 0,
+          'ai' => 0,
+          'al' => 0,
+          'am' => 0,
+          'an' => 0,
+          'ao' => 0,
+          'ar' => 0,
+          'as' => 0,
+          'at' => 0,
+          'au' => 0,
+          'aw' => 0,
+          'az' => 0,
+          'ba' => 0,
+          'bb' => 0,
+          'bd' => 0,
+          'be' => 0,
+          'bf' => 0,
+          'bg' => 0,
+          'bh' => 0,
+          'bi' => 0,
+          'bj' => 0,
+          'bm' => 0,
+          'bn' => 0,
+          'bo' => 0,
+          'br' => 0,
+          'bs' => 0,
+          'bt' => 0,
+          'bw' => 0,
+          'by' => 0,
+          'bz' => 0,
+          'ca' => 0,
+          'cc' => 0,
+          'cd' => 0,
+          'cf' => 0,
+          'cg' => 0,
+          'ch' => 0,
+          'ci' => 0,
+          'ck' => 0,
+          'cl' => 0,
+          'cm' => 0,
+          'cn' => 0,
+          'co' => 0,
+          'cr' => 0,
+          'cu' => 0,
+          'cv' => 0,
+          'cx' => 0,
+          'cy' => 0,
+          'cz' => 0,
+          'de' => 0,
+          'dj' => 0,
+          'dk' => 0,
+          'dm' => 0,
+          'do' => 0,
+          'dz' => 0,
+          'ec' => 0,
+          'ee' => 0,
+          'eg' => 0,
+          'er' => 0,
+          'es' => 0,
+          'et' => 0,
+          'fi' => 0,
+          'fj' => 0,
+          'fk' => 0,
+          'fm' => 0,
+          'fo' => 0,
+          'fr' => 0,
+          'ga' => 0,
+          'gb' => 0,
+          'gd' => 0,
+          'ge' => 0,
+          'gf' => 0,
+          'gh' => 0,
+          'gi' => 0,
+          'gl' => 0,
+          'gm' => 0,
+          'gn' => 0,
+          'gp' => 0,
+          'gq' => 0,
+          'gr' => 0,
+          'gt' => 0,
+          'gu' => 0,
+          'gw' => 0,
+          'gy' => 0,
+          'hk' => 0,
+          'hn' => 0,
+          'hr' => 0,
+          'ht' => 0,
+          'hu' => 0,
+          'id' => 0,
+          'ie' => 0,
+          'il' => 0,
+          'in' => 0,
+          'io' => 0,
+          'iq' => 0,
+          'ir' => 0,
+          'is' => 0,
+          'it' => 0,
+          'jm' => 0,
+          'jo' => 0,
+          'jp' => 0,
+          'ke' => 0,
+          'kg' => 0,
+          'kh' => 0,
+          'ki' => 0,
+          'km' => 0,
+          'kn' => 0,
+          'kp' => 0,
+          'kr' => 0,
+          'kw' => 0,
+          'ky' => 0,
+          'kz' => 0,
+          'la' => 0,
+          'lb' => 0,
+          'lc' => 0,
+          'li' => 0,
+          'lk' => 0,
+          'lr' => 0,
+          'ls' => 0,
+          'lt' => 0,
+          'lu' => 0,
+          'lv' => 0,
+          'ly' => 0,
+          'ma' => 0,
+          'mc' => 0,
+          'md' => 0,
+          'me' => 0,
+          'mg' => 0,
+          'mh' => 0,
+          'mk' => 0,
+          'ml' => 0,
+          'mm' => 0,
+          'mn' => 0,
+          'mo' => 0,
+          'mp' => 0,
+          'mq' => 0,
+          'mr' => 0,
+          'ms' => 0,
+          'mt' => 0,
+          'mu' => 0,
+          'mv' => 0,
+          'mw' => 0,
+          'mx' => 0,
+          'my' => 0,
+          'mz' => 0,
+          'na' => 0,
+          'nc' => 0,
+          'ne' => 0,
+          'nf' => 0,
+          'ng' => 0,
+          'ni' => 0,
+          'nl' => 0,
+          'no' => 0,
+          'np' => 0,
+          'nr' => 0,
+          'nu' => 0,
+          'nz' => 0,
+          'om' => 0,
+          'pa' => 0,
+          'pe' => 0,
+          'pf' => 0,
+          'pg' => 0,
+          'ph' => 0,
+          'pk' => 0,
+          'pl' => 0,
+          'pm' => 0,
+          'pr' => 0,
+          'ps' => 0,
+          'pt' => 0,
+          'pw' => 0,
+          'py' => 0,
+          'qa' => 0,
+          'ro' => 0,
+          'rs' => 0,
+          'ru' => 0,
+          'rw' => 0,
+          'sa' => 0,
+          'sb' => 0,
+          'sc' => 0,
+          'sd' => 0,
+          'se' => 0,
+          'sg' => 0,
+          'sh' => 0,
+          'si' => 0,
+          'sk' => 0,
+          'sl' => 0,
+          'sm' => 0,
+          'sn' => 0,
+          'so' => 0,
+          'sr' => 0,
+          'ss' => 0,
+          'st' => 0,
+          'sv' => 0,
+          'sy' => 0,
+          'sz' => 0,
+          'tc' => 0,
+          'td' => 0,
+          'tg' => 0,
+          'th' => 0,
+          'tj' => 0,
+          'tk' => 0,
+          'tm' => 0,
+          'tn' => 0,
+          'to' => 0,
+          'tp' => 0,
+          'tr' => 0,
+          'tt' => 0,
+          'tv' => 0,
+          'tw' => 0,
+          'tz' => 0,
+          'ua' => 0,
+          'ug' => 0,
+          'us' => 'us',
+          'uy' => 0,
+          'uz' => 0,
+          'va' => 0,
+          'vc' => 0,
+          've' => 0,
+          'vg' => 0,
+          'vi' => 0,
+          'vn' => 0,
+          'vu' => 0,
+          'wf' => 0,
+          'ws' => 0,
+          'ye' => 0,
+          'yt' => 0,
+          'za' => 0,
+          'zm' => 0,
+          'zw' => 0,
+        ),
+        'hide_single_cc' => 1,
+      ),
+      'default_country' => 'us',
+      'enable_country_level_validation' => 0,
+      'enable_default_country' => 1,
+      'enable_extension' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'cck_phone',
+      'settings' => array(
+        'size' => 15,
+      ),
+      'type' => 'phone_number',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_listingstatus'.
+  $field_instances['node-company-field_listingstatus'] = array(
+    'bundle' => 'company',
+    'default_value' => array(
+      0 => array(
+        'value' => 'ACT',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Determines whether or not listings are downloaded using BSF. All agencies are set up with BSF, BSS (Sold) and BSP (Pending) credentials',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_listingstatus',
+    'label' => 'Listing Status',
+    'readmore_behaviour' => 'default',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_mls_type'.
+  $field_instances['node-company-field_mls_type'] = array(
+    'bundle' => 'company',
+    'default_value' => array(
+      0 => array(
+        'tid' => 25,
+      ),
+      1 => array(
+        'tid' => 27,
+      ),
+      2 => array(
+        'tid' => 26,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Select the MLS Type/Types downloaded for this company. This field is checked on the RMLS agreement when they give permission to OIP to download data via BSF',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_mls_type',
+    'label' => 'MLS Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_offid'.
+  $field_instances['node-company-field_offid'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_offid',
+    'label' => 'Listing Office ID',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 15,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_phone'.
+  $field_instances['node-company-field_phone'] = array(
+    'bundle' => 'company',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'cck_phone',
+        'settings' => array(),
+        'type' => 'global_phone_number',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'all_country_codes' => 0,
+      'country_code_position' => 'before',
+      'country_codes' => array(
+        'country_selection' => array(
+          'ad' => 0,
+          'ae' => 0,
+          'af' => 0,
+          'ag' => 0,
+          'ai' => 0,
+          'al' => 0,
+          'am' => 0,
+          'an' => 0,
+          'ao' => 0,
+          'ar' => 0,
+          'as' => 0,
+          'at' => 0,
+          'au' => 0,
+          'aw' => 0,
+          'az' => 0,
+          'ba' => 0,
+          'bb' => 0,
+          'bd' => 0,
+          'be' => 0,
+          'bf' => 0,
+          'bg' => 0,
+          'bh' => 0,
+          'bi' => 0,
+          'bj' => 0,
+          'bm' => 0,
+          'bn' => 0,
+          'bo' => 0,
+          'br' => 0,
+          'bs' => 0,
+          'bt' => 0,
+          'bw' => 0,
+          'by' => 0,
+          'bz' => 0,
+          'ca' => 0,
+          'cc' => 0,
+          'cd' => 0,
+          'cf' => 0,
+          'cg' => 0,
+          'ch' => 0,
+          'ci' => 0,
+          'ck' => 0,
+          'cl' => 0,
+          'cm' => 0,
+          'cn' => 0,
+          'co' => 0,
+          'cr' => 0,
+          'cu' => 0,
+          'cv' => 0,
+          'cx' => 0,
+          'cy' => 0,
+          'cz' => 0,
+          'de' => 0,
+          'dj' => 0,
+          'dk' => 0,
+          'dm' => 0,
+          'do' => 0,
+          'dz' => 0,
+          'ec' => 0,
+          'ee' => 0,
+          'eg' => 0,
+          'er' => 0,
+          'es' => 0,
+          'et' => 0,
+          'fi' => 0,
+          'fj' => 0,
+          'fk' => 0,
+          'fm' => 0,
+          'fo' => 0,
+          'fr' => 0,
+          'ga' => 0,
+          'gb' => 0,
+          'gd' => 0,
+          'ge' => 0,
+          'gf' => 0,
+          'gh' => 0,
+          'gi' => 0,
+          'gl' => 0,
+          'gm' => 0,
+          'gn' => 0,
+          'gp' => 0,
+          'gq' => 0,
+          'gr' => 0,
+          'gt' => 0,
+          'gu' => 0,
+          'gw' => 0,
+          'gy' => 0,
+          'hk' => 0,
+          'hn' => 0,
+          'hr' => 0,
+          'ht' => 0,
+          'hu' => 0,
+          'id' => 0,
+          'ie' => 0,
+          'il' => 0,
+          'in' => 0,
+          'io' => 0,
+          'iq' => 0,
+          'ir' => 0,
+          'is' => 0,
+          'it' => 0,
+          'jm' => 0,
+          'jo' => 0,
+          'jp' => 0,
+          'ke' => 0,
+          'kg' => 0,
+          'kh' => 0,
+          'ki' => 0,
+          'km' => 0,
+          'kn' => 0,
+          'kp' => 0,
+          'kr' => 0,
+          'kw' => 0,
+          'ky' => 0,
+          'kz' => 0,
+          'la' => 0,
+          'lb' => 0,
+          'lc' => 0,
+          'li' => 0,
+          'lk' => 0,
+          'lr' => 0,
+          'ls' => 0,
+          'lt' => 0,
+          'lu' => 0,
+          'lv' => 0,
+          'ly' => 0,
+          'ma' => 0,
+          'mc' => 0,
+          'md' => 0,
+          'me' => 0,
+          'mg' => 0,
+          'mh' => 0,
+          'mk' => 0,
+          'ml' => 0,
+          'mm' => 0,
+          'mn' => 0,
+          'mo' => 0,
+          'mp' => 0,
+          'mq' => 0,
+          'mr' => 0,
+          'ms' => 0,
+          'mt' => 0,
+          'mu' => 0,
+          'mv' => 0,
+          'mw' => 0,
+          'mx' => 0,
+          'my' => 0,
+          'mz' => 0,
+          'na' => 0,
+          'nc' => 0,
+          'ne' => 0,
+          'nf' => 0,
+          'ng' => 0,
+          'ni' => 0,
+          'nl' => 0,
+          'no' => 0,
+          'np' => 0,
+          'nr' => 0,
+          'nu' => 0,
+          'nz' => 0,
+          'om' => 0,
+          'pa' => 0,
+          'pe' => 0,
+          'pf' => 0,
+          'pg' => 0,
+          'ph' => 0,
+          'pk' => 0,
+          'pl' => 0,
+          'pm' => 0,
+          'pr' => 0,
+          'ps' => 0,
+          'pt' => 0,
+          'pw' => 0,
+          'py' => 0,
+          'qa' => 0,
+          'ro' => 0,
+          'rs' => 0,
+          'ru' => 0,
+          'rw' => 0,
+          'sa' => 0,
+          'sb' => 0,
+          'sc' => 0,
+          'sd' => 0,
+          'se' => 0,
+          'sg' => 0,
+          'sh' => 0,
+          'si' => 0,
+          'sk' => 0,
+          'sl' => 0,
+          'sm' => 0,
+          'sn' => 0,
+          'so' => 0,
+          'sr' => 0,
+          'ss' => 0,
+          'st' => 0,
+          'sv' => 0,
+          'sy' => 0,
+          'sz' => 0,
+          'tc' => 0,
+          'td' => 0,
+          'tg' => 0,
+          'th' => 0,
+          'tj' => 0,
+          'tk' => 0,
+          'tm' => 0,
+          'tn' => 0,
+          'to' => 0,
+          'tp' => 0,
+          'tr' => 0,
+          'tt' => 0,
+          'tv' => 0,
+          'tw' => 0,
+          'tz' => 0,
+          'ua' => 0,
+          'ug' => 0,
+          'us' => 'us',
+          'uy' => 0,
+          'uz' => 0,
+          'va' => 0,
+          'vc' => 0,
+          've' => 0,
+          'vg' => 0,
+          'vi' => 0,
+          'vn' => 0,
+          'vu' => 0,
+          'wf' => 0,
+          'ws' => 0,
+          'ye' => 0,
+          'yt' => 0,
+          'za' => 0,
+          'zm' => 0,
+          'zw' => 0,
+        ),
+        'hide_single_cc' => 1,
+      ),
+      'default_country' => 'us',
+      'enable_country_level_validation' => 0,
+      'enable_default_country' => 1,
+      'enable_extension' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'cck_phone',
+      'settings' => array(
+        'size' => 15,
+      ),
+      'type' => 'phone_number',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_state'.
+  $field_instances['node-company-field_state'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_state',
+    'label' => 'State',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 3,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_tollfree'.
+  $field_instances['node-company-field_tollfree'] = array(
+    'bundle' => 'company',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'cck_phone',
+        'settings' => array(),
+        'type' => 'global_phone_number',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tollfree',
+    'label' => 'Toll Free',
+    'required' => 0,
+    'settings' => array(
+      'all_country_codes' => 0,
+      'country_code_position' => 'before',
+      'country_codes' => array(
+        'country_selection' => array(
+          'ad' => 0,
+          'ae' => 0,
+          'af' => 0,
+          'ag' => 0,
+          'ai' => 0,
+          'al' => 0,
+          'am' => 0,
+          'an' => 0,
+          'ao' => 0,
+          'ar' => 0,
+          'as' => 0,
+          'at' => 0,
+          'au' => 0,
+          'aw' => 0,
+          'az' => 0,
+          'ba' => 0,
+          'bb' => 0,
+          'bd' => 0,
+          'be' => 0,
+          'bf' => 0,
+          'bg' => 0,
+          'bh' => 0,
+          'bi' => 0,
+          'bj' => 0,
+          'bm' => 0,
+          'bn' => 0,
+          'bo' => 0,
+          'br' => 0,
+          'bs' => 0,
+          'bt' => 0,
+          'bw' => 0,
+          'by' => 0,
+          'bz' => 0,
+          'ca' => 0,
+          'cc' => 0,
+          'cd' => 0,
+          'cf' => 0,
+          'cg' => 0,
+          'ch' => 0,
+          'ci' => 0,
+          'ck' => 0,
+          'cl' => 0,
+          'cm' => 0,
+          'cn' => 0,
+          'co' => 0,
+          'cr' => 0,
+          'cu' => 0,
+          'cv' => 0,
+          'cx' => 0,
+          'cy' => 0,
+          'cz' => 0,
+          'de' => 0,
+          'dj' => 0,
+          'dk' => 0,
+          'dm' => 0,
+          'do' => 0,
+          'dz' => 0,
+          'ec' => 0,
+          'ee' => 0,
+          'eg' => 0,
+          'er' => 0,
+          'es' => 0,
+          'et' => 0,
+          'fi' => 0,
+          'fj' => 0,
+          'fk' => 0,
+          'fm' => 0,
+          'fo' => 0,
+          'fr' => 0,
+          'ga' => 0,
+          'gb' => 0,
+          'gd' => 0,
+          'ge' => 0,
+          'gf' => 0,
+          'gh' => 0,
+          'gi' => 0,
+          'gl' => 0,
+          'gm' => 0,
+          'gn' => 0,
+          'gp' => 0,
+          'gq' => 0,
+          'gr' => 0,
+          'gt' => 0,
+          'gu' => 0,
+          'gw' => 0,
+          'gy' => 0,
+          'hk' => 0,
+          'hn' => 0,
+          'hr' => 0,
+          'ht' => 0,
+          'hu' => 0,
+          'id' => 0,
+          'ie' => 0,
+          'il' => 0,
+          'in' => 0,
+          'io' => 0,
+          'iq' => 0,
+          'ir' => 0,
+          'is' => 0,
+          'it' => 0,
+          'jm' => 0,
+          'jo' => 0,
+          'jp' => 0,
+          'ke' => 0,
+          'kg' => 0,
+          'kh' => 0,
+          'ki' => 0,
+          'km' => 0,
+          'kn' => 0,
+          'kp' => 0,
+          'kr' => 0,
+          'kw' => 0,
+          'ky' => 0,
+          'kz' => 0,
+          'la' => 0,
+          'lb' => 0,
+          'lc' => 0,
+          'li' => 0,
+          'lk' => 0,
+          'lr' => 0,
+          'ls' => 0,
+          'lt' => 0,
+          'lu' => 0,
+          'lv' => 0,
+          'ly' => 0,
+          'ma' => 0,
+          'mc' => 0,
+          'md' => 0,
+          'me' => 0,
+          'mg' => 0,
+          'mh' => 0,
+          'mk' => 0,
+          'ml' => 0,
+          'mm' => 0,
+          'mn' => 0,
+          'mo' => 0,
+          'mp' => 0,
+          'mq' => 0,
+          'mr' => 0,
+          'ms' => 0,
+          'mt' => 0,
+          'mu' => 0,
+          'mv' => 0,
+          'mw' => 0,
+          'mx' => 0,
+          'my' => 0,
+          'mz' => 0,
+          'na' => 0,
+          'nc' => 0,
+          'ne' => 0,
+          'nf' => 0,
+          'ng' => 0,
+          'ni' => 0,
+          'nl' => 0,
+          'no' => 0,
+          'np' => 0,
+          'nr' => 0,
+          'nu' => 0,
+          'nz' => 0,
+          'om' => 0,
+          'pa' => 0,
+          'pe' => 0,
+          'pf' => 0,
+          'pg' => 0,
+          'ph' => 0,
+          'pk' => 0,
+          'pl' => 0,
+          'pm' => 0,
+          'pr' => 0,
+          'ps' => 0,
+          'pt' => 0,
+          'pw' => 0,
+          'py' => 0,
+          'qa' => 0,
+          'ro' => 0,
+          'rs' => 0,
+          'ru' => 0,
+          'rw' => 0,
+          'sa' => 0,
+          'sb' => 0,
+          'sc' => 0,
+          'sd' => 0,
+          'se' => 0,
+          'sg' => 0,
+          'sh' => 0,
+          'si' => 0,
+          'sk' => 0,
+          'sl' => 0,
+          'sm' => 0,
+          'sn' => 0,
+          'so' => 0,
+          'sr' => 0,
+          'ss' => 0,
+          'st' => 0,
+          'sv' => 0,
+          'sy' => 0,
+          'sz' => 0,
+          'tc' => 0,
+          'td' => 0,
+          'tg' => 0,
+          'th' => 0,
+          'tj' => 0,
+          'tk' => 0,
+          'tm' => 0,
+          'tn' => 0,
+          'to' => 0,
+          'tp' => 0,
+          'tr' => 0,
+          'tt' => 0,
+          'tv' => 0,
+          'tw' => 0,
+          'tz' => 0,
+          'ua' => 0,
+          'ug' => 0,
+          'us' => 'us',
+          'uy' => 0,
+          'uz' => 0,
+          'va' => 0,
+          'vc' => 0,
+          've' => 0,
+          'vg' => 0,
+          'vi' => 0,
+          'vn' => 0,
+          'vu' => 0,
+          'wf' => 0,
+          'ws' => 0,
+          'ye' => 0,
+          'yt' => 0,
+          'za' => 0,
+          'zm' => 0,
+          'zw' => 0,
+        ),
+        'hide_single_cc' => 1,
+      ),
+      'default_country' => 'us',
+      'enable_country_level_validation' => 0,
+      'enable_default_country' => 1,
+      'enable_extension' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'cck_phone',
+      'settings' => array(
+        'size' => 15,
+      ),
+      'type' => 'phone_number',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_website'.
+  $field_instances['node-company-field_website'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Company website - enter the full URL (e.g. http://www.yourcompanyname.com)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_website',
+    'label' => 'Company Website',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-company-field_zipcode'.
+  $field_instances['node-company-field_zipcode'] = array(
+    'bundle' => 'company',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_zipcode',
+    'label' => 'Zip Code',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 10,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-image-body'.
   $field_instances['node-image-body'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -54,7 +1493,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-image-field_graphic'
+  // Exported field_instance: 'node-image-field_graphic'.
   $field_instances['node-image-field_graphic'] = array(
     'bundle' => 'image',
     'deleted' => 0,
@@ -104,7 +1543,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_agency'
+  // Exported field_instance: 'user-user-field_agency'.
   $field_instances['user-user-field_agency'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -137,7 +1576,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_agentid'
+  // Exported field_instance: 'user-user-field_agentid'.
   $field_instances['user-user-field_agentid'] = array(
     'bundle' => 'user',
     'default_value' => array(
@@ -175,7 +1614,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_cell'
+  // Exported field_instance: 'user-user-field_cell'.
   $field_instances['user-user-field_cell'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -449,7 +1888,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_company_name'
+  // Exported field_instance: 'user-user-field_company_name'.
   $field_instances['user-user-field_company_name'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -483,7 +1922,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_default_flyer'
+  // Exported field_instance: 'user-user-field_default_flyer'.
   $field_instances['user-user-field_default_flyer'] = array(
     'bundle' => 'user',
     'default_value' => array(
@@ -518,7 +1957,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_description'
+  // Exported field_instance: 'user-user-field_description'.
   $field_instances['user-user-field_description'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -552,7 +1991,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_designations'
+  // Exported field_instance: 'user-user-field_designations'.
   $field_instances['user-user-field_designations'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -583,7 +2022,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_email'
+  // Exported field_instance: 'user-user-field_email'.
   $field_instances['user-user-field_email'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -616,7 +2055,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_fax'
+  // Exported field_instance: 'user-user-field_fax'.
   $field_instances['user-user-field_fax'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -890,7 +2329,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_firstname'
+  // Exported field_instance: 'user-user-field_firstname'.
   $field_instances['user-user-field_firstname'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -924,7 +2363,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_lastname'
+  // Exported field_instance: 'user-user-field_lastname'.
   $field_instances['user-user-field_lastname'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -958,7 +2397,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_license'
+  // Exported field_instance: 'user-user-field_license'.
   $field_instances['user-user-field_license'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -992,7 +2431,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_licensed'
+  // Exported field_instance: 'user-user-field_licensed'.
   $field_instances['user-user-field_licensed'] = array(
     'bundle' => 'user',
     'default_value' => array(
@@ -1030,7 +2469,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_middlename'
+  // Exported field_instance: 'user-user-field_middlename'.
   $field_instances['user-user-field_middlename'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1064,7 +2503,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_mls_type'
+  // Exported field_instance: 'user-user-field_mls_type'.
   $field_instances['user-user-field_mls_type'] = array(
     'bundle' => 'user',
     'default_value' => array(
@@ -1099,7 +2538,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_name_suffix'
+  // Exported field_instance: 'user-user-field_name_suffix'.
   $field_instances['user-user-field_name_suffix'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1133,7 +2572,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_offid'
+  // Exported field_instance: 'user-user-field_offid'.
   $field_instances['user-user-field_offid'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1167,7 +2606,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_phone'
+  // Exported field_instance: 'user-user-field_phone'.
   $field_instances['user-user-field_phone'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -1441,7 +2880,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_rotatinglisting'
+  // Exported field_instance: 'user-user-field_rotatinglisting'.
   $field_instances['user-user-field_rotatinglisting'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1472,7 +2911,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_teammate'
+  // Exported field_instance: 'user-user-field_teammate'.
   $field_instances['user-user-field_teammate'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1509,7 +2948,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_title'
+  // Exported field_instance: 'user-user-field_title'.
   $field_instances['user-user-field_title'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1543,7 +2982,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_tollfree'
+  // Exported field_instance: 'user-user-field_tollfree'.
   $field_instances['user-user-field_tollfree'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -1817,7 +3256,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_usertype'
+  // Exported field_instance: 'user-user-field_usertype'.
   $field_instances['user-user-field_usertype'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1848,7 +3287,7 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_website'
+  // Exported field_instance: 'user-user-field_website'.
   $field_instances['user-user-field_website'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -1899,15 +3338,27 @@ function realtor_user_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Address 1');
+  t('Address 2');
   t('Agency');
+  t('Agent Count');
   t('Agent ID');
   t('Agent ID (MLS Identification code)');
   t('Body');
   t('Cell');
+  t('City');
+  t('Company Email');
+  t('Company Logo');
   t('Company Name');
+  t('Company Type');
+  t('Company Website');
+  t('Company email address');
+  t('Company website - enter the full URL (e.g. http://www.yourcompanyname.com)');
+  t('Contact/Principal Broker');
   t('Default Flyer');
   t('Description');
   t('Designations');
+  t('Determines whether or not listings are downloaded using BSF. All agencies are set up with BSF, BSS (Sold) and BSP (Pending) credentials');
   t('Enter a description of your services or areas of expertise.');
   t('Enter the agent\'s first name');
   t('Enter your public email address, if different from your login email address');
@@ -1920,6 +3371,7 @@ function realtor_user_field_default_field_instances() {
   t('License or CCB#');
   t('Licensed in (State)');
   t('Listing Office ID');
+  t('Listing Status');
   t('MLS Type');
   t('Middle Initial');
   t('Name Suffix');
@@ -1928,6 +3380,9 @@ function realtor_user_field_default_field_instances() {
   t('Realtors enter License# (if known). Contractors must enter CCB#.');
   t('Rotating Listing');
   t('Select an existing member if this member always "team lists". This field will populate to "co-list" field if the MLS co-list field is empty or is for a non-member.');
+  t('Select the MLS Type/Types downloaded for this company. This field is checked on the RMLS agreement when they give permission to OIP to download data via BSF');
+  t('State');
+  t('Street Address');
   t('Suffix, if any (e.g. JR, SR, III)');
   t('Teammate');
   t('Title');
@@ -1936,6 +3391,7 @@ function realtor_user_field_default_field_instances() {
   t('User Type');
   t('Website');
   t('Website URL. If multiple websites, enter the OIP-hosted website first.');
+  t('Zip Code');
 
   return $field_instances;
 }

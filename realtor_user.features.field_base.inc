@@ -10,21 +10,13 @@
 function realtor_user_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_address2'
+  // Exported field_base: 'field_address2'.
   $field_bases['field_address2'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_address2',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -39,21 +31,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_agency'
+  // Exported field_base: 'field_agency'.
   $field_bases['field_agency'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_agency',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -84,21 +68,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_agentid'
+  // Exported field_base: 'field_agentid'.
   $field_bases['field_agentid'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_agentid',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -113,14 +89,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_cell'
+  // Exported field_base: 'field_cell'.
   $field_bases['field_cell'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_cell',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'cck_phone',
@@ -131,21 +106,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'phone_number',
   );
 
-  // Exported field_base: 'field_company_logo'
+  // Exported field_base: 'field_company_logo'.
   $field_bases['field_company_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_company_logo',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -161,21 +128,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_company_name'
+  // Exported field_base: 'field_company_name'.
   $field_bases['field_company_name'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_company_name',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -190,21 +149,39 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_contact'
+  // Exported field_base: 'field_companytype'.
+  $field_bases['field_companytype'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_companytype',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'company_type',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_contact'.
   $field_bases['field_contact'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_contact',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -219,21 +196,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_default_flyer'
+  // Exported field_base: 'field_default_flyer'.
   $field_bases['field_default_flyer'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_default_flyer',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -253,21 +222,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_description'
+  // Exported field_base: 'field_description'.
   $field_bases['field_description'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_description',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -280,21 +241,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_designations'
+  // Exported field_base: 'field_designations'.
   $field_bases['field_designations'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_designations',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -314,14 +267,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_email'
+  // Exported field_base: 'field_email'.
   $field_bases['field_email'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_email',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'email',
@@ -330,14 +282,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'email',
   );
 
-  // Exported field_base: 'field_fax'
+  // Exported field_base: 'field_fax'.
   $field_bases['field_fax'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_fax',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'cck_phone',
@@ -348,21 +299,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'phone_number',
   );
 
-  // Exported field_base: 'field_firstname'
+  // Exported field_base: 'field_firstname'.
   $field_bases['field_firstname'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_firstname',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -377,21 +320,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_graphic'
+  // Exported field_base: 'field_graphic'.
   $field_bases['field_graphic'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_graphic',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -407,21 +342,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_image'
+  // Exported field_base: 'field_image'.
   $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_image',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -437,21 +364,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_lastname'
+  // Exported field_base: 'field_lastname'.
   $field_bases['field_lastname'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_lastname',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -466,21 +385,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_license'
+  // Exported field_base: 'field_license'.
   $field_bases['field_license'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_license',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -495,21 +406,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_licensed'
+  // Exported field_base: 'field_licensed'.
   $field_bases['field_licensed'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_licensed',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -529,21 +432,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_middlename'
+  // Exported field_base: 'field_middlename'.
   $field_bases['field_middlename'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_middlename',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -558,21 +453,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_name_suffix'
+  // Exported field_base: 'field_name_suffix'.
   $field_bases['field_name_suffix'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_name_suffix',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -587,14 +474,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_phone'
+  // Exported field_base: 'field_phone'.
   $field_bases['field_phone'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_phone',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'cck_phone',
@@ -605,21 +491,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'phone_number',
   );
 
-  // Exported field_base: 'field_rotatinglisting'
+  // Exported field_base: 'field_rotatinglisting'.
   $field_bases['field_rotatinglisting'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_rotatinglisting',
-    'foreign keys' => array(
-      'nid' => array(
-        'columns' => array(
-          'nid' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'nid' => array(
         0 => 'nid',
@@ -645,21 +523,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_teammate'
+  // Exported field_base: 'field_teammate'.
   $field_bases['field_teammate'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_teammate',
-    'foreign keys' => array(
-      'users' => array(
-        'columns' => array(
-          'target_id' => 'uid',
-        ),
-        'table' => 'users',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -686,21 +556,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_title'
+  // Exported field_base: 'field_title'.
   $field_bases['field_title'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_title',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -715,14 +577,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_tollfree'
+  // Exported field_base: 'field_tollfree'.
   $field_bases['field_tollfree'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_tollfree',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'cck_phone',
@@ -733,21 +594,13 @@ function realtor_user_field_default_field_bases() {
     'type' => 'phone_number',
   );
 
-  // Exported field_base: 'field_usertype'
+  // Exported field_base: 'field_usertype'.
   $field_bases['field_usertype'] = array(
     'active' => 1,
     'cardinality' => 3,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_usertype',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
