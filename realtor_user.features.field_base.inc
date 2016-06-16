@@ -736,7 +736,7 @@ function realtor_user_field_default_field_bases() {
   // Exported field_base: 'field_usertype'
   $field_bases['field_usertype'] = array(
     'active' => 1,
-    'cardinality' => 2,
+    'cardinality' => 3,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_usertype',
