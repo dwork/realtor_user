@@ -225,47 +225,6 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-company-field_companytype'.
-  $field_instances['node-company-field_companytype'] = array(
-    'bundle' => 'company',
-    'default_value' => array(
-      0 => array(
-        'tid' => 16,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_companytype',
-    'label' => 'Company Type',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 0,
-    ),
-  );
-
   // Exported field_instance: 'node-company-field_contact'.
   $field_instances['node-company-field_contact'] = array(
     'bundle' => 'company',
@@ -3256,37 +3215,6 @@ function realtor_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_usertype'.
-  $field_instances['user-user-field_usertype'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'If you are a Realtor or Licensed Real Estate Agent, enter "Real Estate". Otherwise, enter a description that describes your company (e.g. "Printer", "Electrician", "Lender", etc.)',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 26,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_usertype',
-    'label' => 'User Type',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_website'.
   $field_instances['user-user-field_website'] = array(
     'bundle' => 'user',
@@ -3350,7 +3278,6 @@ function realtor_user_field_default_field_instances() {
   t('Company Email');
   t('Company Logo');
   t('Company Name');
-  t('Company Type');
   t('Company Website');
   t('Company email address');
   t('Company website - enter the full URL (e.g. http://www.yourcompanyname.com)');
@@ -3365,7 +3292,6 @@ function realtor_user_field_default_field_instances() {
   t('Fax');
   t('First Name');
   t('If you are a Real Estate Agent, and your Agency is not listed, please enter your Agency name here. If you are a company, enter your company\'s full name here.');
-  t('If you are a Realtor or Licensed Real Estate Agent, enter "Real Estate". Otherwise, enter a description that describes your company (e.g. "Printer", "Electrician", "Lender", etc.)');
   t('Image');
   t('Last Name');
   t('License or CCB#');
@@ -3388,7 +3314,6 @@ function realtor_user_field_default_field_instances() {
   t('Title');
   t('Toll Free');
   t('Upload an image to the public library, useful for widgets and other images used throughout.');
-  t('User Type');
   t('Website');
   t('Website URL. If multiple websites, enter the OIP-hosted website first.');
   t('Zip Code');

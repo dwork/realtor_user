@@ -19,14 +19,6 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'licensed_state_',
   );
   $terms[] = array(
-    'name' => 'Payroll',
-    'description' => '',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => '07722703-0dcd-4a3e-bb58-f9392bf1f734',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'RSPS',
     'description' => 'Resort & Second-Home Property Specialist / RSPS',
     'format' => 'filtered_html',
@@ -91,14 +83,6 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'licensed_state_',
   );
   $terms[] = array(
-    'name' => 'Printer',
-    'description' => 'Printer: quick printer, offset printer; business cards, banners, flyers',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => '2704b66e-00e1-46d1-874f-890815a10071',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'France',
     'description' => NULL,
     'format' => NULL,
@@ -131,14 +115,6 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'licensed_state_',
   );
   $terms[] = array(
-    'name' => 'Builder',
-    'description' => 'Builder',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => '4521d706-4990-4638-b3f7-37a33f54d0a7',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'OV',
     'description' => NULL,
     'format' => NULL,
@@ -153,14 +129,6 @@ function realtor_user_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '4a4b3a96-2a9e-45ca-a618-619079e60320',
     'vocabulary_machine_name' => 'licensed_state_',
-  );
-  $terms[] = array(
-    'name' => 'Internet Service Provider',
-    'description' => 'Website Hosting, DSL or Dialup connection; email',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => '4c2b0ec4-75b2-462d-9597-22a1861ee59e',
-    'vocabulary_machine_name' => 'company_type',
   );
   $terms[] = array(
     'name' => 'UT',
@@ -299,14 +267,6 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'designations',
   );
   $terms[] = array(
-    'name' => 'Tax Preparation',
-    'description' => '',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => '7576c2ca-0e2e-451d-ab31-6464caa81570',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'BPOR',
     'description' => 'Broker Price Opinion Resource (BPOR)',
     'format' => 'filtered_html',
@@ -315,28 +275,12 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'designations',
   );
   $terms[] = array(
-    'name' => 'Business Cards',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '806634c9-98b3-4c52-8620-5d9990c70e5b',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'RCE',
     'description' => 'REALTOR® Association Certified Executive / RCE',
     'format' => 'filtered_html',
     'weight' => 0,
     'uuid' => '832e36b0-07d7-42d1-a16c-8ced05b6ac40',
     'vocabulary_machine_name' => 'designations',
-  );
-  $terms[] = array(
-    'name' => 'Banners',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '87590784-9c52-4088-afa1-d36d3e0ec7f3',
-    'vocabulary_machine_name' => 'company_type',
   );
   $terms[] = array(
     'name' => 'Flyer1',
@@ -370,14 +314,6 @@ function realtor_user_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '9173c6b9-3b16-4b45-9104-7ea3fd2f1c38',
     'vocabulary_machine_name' => 'designations',
-  );
-  $terms[] = array(
-    'name' => 'Real Estate',
-    'description' => 'Real Estate Agent or Agency',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => '93e1a465-c5dd-4cb1-b2ed-f8a0dff740e1',
-    'vocabulary_machine_name' => 'company_type',
   );
   $terms[] = array(
     'name' => 'BY',
@@ -487,14 +423,6 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'designations',
   );
   $terms[] = array(
-    'name' => 'Rental Management',
-    'description' => '',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => 'b7cecde0-0dc0-4f9b-a9c8-aa8b4b741aae',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'e-PRO',
     'description' => 'e-PRO® Electronic Certified Professional',
     'format' => 'filtered_html',
@@ -509,14 +437,6 @@ function realtor_user_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'ba75e6cb-2eb1-4da1-b241-e103052685d1',
     'vocabulary_machine_name' => 'licensed_state_',
-  );
-  $terms[] = array(
-    'name' => 'Guest',
-    'description' => 'Guest members may save listings for future reference',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => 'bc501392-6744-40b3-a091-1384ead36991',
-    'vocabulary_machine_name' => 'company_type',
   );
   $terms[] = array(
     'name' => 'AQUITAINE',
@@ -599,14 +519,6 @@ function realtor_user_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'licensed_state_',
   );
   $terms[] = array(
-    'name' => 'Domain Management',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => 'd297f872-c44d-4fde-a597-a6dda566320d',
-    'vocabulary_machine_name' => 'company_type',
-  );
-  $terms[] = array(
     'name' => 'TAS',
     'description' => NULL,
     'format' => NULL,
@@ -621,14 +533,6 @@ function realtor_user_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'df43fbf6-79f1-4801-a542-4c7fbcf95c3b',
     'vocabulary_machine_name' => 'licensed_state_',
-  );
-  $terms[] = array(
-    'name' => 'Website',
-    'description' => 'Domain registration, website design and development, hosting',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => 'e7e8c1a4-67bd-4fa6-9d65-49005f525542',
-    'vocabulary_machine_name' => 'company_type',
   );
   $terms[] = array(
     'name' => 'PA',
@@ -653,14 +557,6 @@ function realtor_user_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'f1e43f5e-3900-429a-887a-01197391c774',
     'vocabulary_machine_name' => 'licensed_state_',
-  );
-  $terms[] = array(
-    'name' => 'Accounting',
-    'description' => '',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => 'f9789945-553e-4a26-ab1b-11e04dbad088',
-    'vocabulary_machine_name' => 'company_type',
   );
   $terms[] = array(
     'name' => 'VIC',
